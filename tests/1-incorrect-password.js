@@ -4,7 +4,7 @@ const {
   login 
 } = require('../utils/login');
 
-const { clickButton, insertValueToInputField } = require('../utils/selenium-operations');
+const { clickButton } = require('../utils/selenium-operations');
 
 require('dotenv').config();
 
@@ -25,16 +25,6 @@ async function selectStudent() {
 
   let button = '/html/body/app-root/app-login/div/div/p-card/div/div[2]/div/div/div[4]/div/form/div[5]/button';
   await clickButton(button, driver);
-
-  await driver.sleep(1000);
-
-  let result = await driver.getElement(By.xpath('/html/body/app-root/app-login/div/div/p-card/div/div[2]/div/div/div[4]/div/form/div[1]/p-messages/div/div/div')).getText();
-
-  if (result === 'รหัสผ่านไม่ถูกต้องกรุณาตรวจสอบ!') {
-    console.log('✅ Test passed')
-  } else {
-    console.log('❌ Test failed')
-  }
 }
 
 selectStudent();

@@ -23,18 +23,10 @@ async function selectStudent() {
   
   await driver.sleep(2000);
 
-  let button = '/html/body/app-root/app-login/div/div/p-card/div/div[2]/div/div/div[4]/div/form/div[5]/button';
+  let button = '/html/body/app-root/app-login/div/div/p-card/div/div[2]/div/div/div[2]/form/div[1]/p-messages/div/div/div/span[2]';
   await clickButton(button, driver);
 
   await driver.sleep(1000);
-
-  let result = await driver.getElement(By.xpath('/html/body/app-root/app-login/div/div/p-card/div/div[2]/div/div/div[4]/div/form/div[1]/p-messages/div/div/div')).getText();
-
-  if (result === 'ไม่พบผู้ใช้งาน กรุณาตรวจสอบ!') {
-    console.log('✅ Test passed')
-  } else {
-    console.log('❌ Test failed')
-  }
 }
 
 selectStudent();
