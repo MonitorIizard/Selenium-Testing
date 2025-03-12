@@ -100,8 +100,6 @@ async function selectStudent() {
   } else {
     console.log('✅  result == ปกติ')
   }
-
-
   // first student age = 9ึ7 months
   //111.66	Thin 116.32	118.74	Mid: 126.20	134.19	136.92	142.61
   // 111.66 - 116.32 Is Thin

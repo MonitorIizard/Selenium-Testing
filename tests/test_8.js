@@ -65,7 +65,7 @@ async function accomplice(driver) {
     await driver.findElement(By.xpath('/html/body/app-root/app-school-layout/app-school-home/div/div/div[2]/app-sign-up/p-card/div/div/div[2]/div/p-fieldset[1]/fieldset/div/div/div/div[5]/p-checkbox')).click();
 
     let signature1 = await driver.findElement(By.xpath('/html/body/app-root/app-school-layout/app-school-home/div/div/div[2]/app-sign-up/p-card/div/div/div[2]/div/p-fieldset[1]/fieldset/div/div/div/div[6]/div/div[2]/input'));
-    await signature1.sendKeys('C:\\Users\\Boss\\Pictures\\Saved Pictures\\icon\\gg icon.png');
+    await signature1.sendKeys('/Users/owl/Documents/projects/s:w testing/tests/b.png');
 
     await driver.findElement(By.xpath('/html/body/app-root/app-school-layout/app-school-home/div/div/div[2]/app-sign-up/p-card/div/div/div[2]/div/p-fieldset[2]/fieldset/div/div/div/div[1]/p-dropdown/div/div[2]')).click();
     
@@ -81,7 +81,7 @@ async function accomplice(driver) {
     await driver.findElement(By.xpath('/html/body/app-root/app-school-layout/app-school-home/div/div/div[2]/app-sign-up/p-card/div/div/div[2]/div/p-fieldset[2]/fieldset/div/div/div/div[5]/p-checkbox')).click();
 
     let signature2 = await driver.findElement(By.xpath('/html/body/app-root/app-school-layout/app-school-home/div/div/div[2]/app-sign-up/p-card/div/div/div[2]/div/p-fieldset[2]/fieldset/div/div/div/div[6]/div/div[2]/input'));
-    await signature2.sendKeys('C:\\Users\\Boss\\Pictures\\Saved Pictures\\icon\\logo.png');
+    await signature2.sendKeys('/Users/owl/Documents/projects/s:w testing/tests/a.png');
 
     await driver.findElement(By.xpath('/html/body/app-root/app-school-layout/app-school-home/div/div/div[2]/app-sign-up/p-card/div/div/div[2]/app-prev-next-button/div/button[2]')).click();
 }
